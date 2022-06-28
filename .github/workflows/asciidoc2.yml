@@ -1,25 +1,3 @@
-GitHub Actionsの設定
-GitHub Actionsを使うのは初めてなので最適解かどうかはわかりませんが，ひとまず動くリポジトリを下記に残しておきます。
-
-GitHub - YoshiRi/MarkdownToAsciidocToHTML_CI: GitHub Action Test
-https://github.com
-
-
-ざっくりとした動作原理
-きちんと語れるほど詳しくないですが.github/workflows/hoge.ymlというファイルを設定することでActionsを設定出来ます。
-
-今回は変更がPushされたときに起動するアクションを設定しました。
-
-流れとしては，下記のようになっています。
-
-Github Workspaceにリポジトリのファイルをチェックアウト
-markdown -> asciidoc 変換 by Pandoc on Docker
-asciidoc -> html 変換 by asciidoctor Action
-生成物をbuildフォルダに移動
-build folderの中身をgh-pagesブランチにPush （ 参考）
-そして実際のコードは以下のようになっています。
-
-
 # This is a basic workflow to help you get started with Actions
 
 name: CI
