@@ -23,18 +23,14 @@ jobs:
           ref: feat/api
 
       # Output command using asciidoctor-action
-      - name: Change Directory
-        run: cd 090_sandbox/authoring/
-
-      # Output command using asciidoctor-action
       - name: Build AsciiDoc step
         id: documents
         uses: Analog-inc/asciidoctor-action@master
         with:
-          shellcommand: "asciidoctor -r asciidoctor-diagram README.adoc"
+          shellcommand: "asciidoctor -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
       # Use the output from the documents step
       - name: Save AsciiDoc step
         uses: actions/upload-artifact@v1
         with:
           name: Output-document
-          path: ./README.html
+          path: ./090_sandbox/authoring/README.html
