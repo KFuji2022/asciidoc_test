@@ -100,10 +100,9 @@ class 会社
 mermaid も直接書ける
  
 .mermaidの例
-[mermaid]
-....
+```mermaid
 graph LR;
     AsciiDocテキスト -- asciidocotor-pdf --> PDF仕様書;
     PlantUMLテキスト -- PlantUML --> png画像;
     png画像 -- asciidoctor-pdf --> PDF仕様書;
-....
+```
