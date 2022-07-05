@@ -86,14 +86,13 @@ PlantUML を直接書ける
 PlantUML を直接書ける
  
 .PlantUMLの例
-[plantuml]
-....
+@startuml
 class 会社員
 class 技術社員
 class 会社
 会社員 <|-- 技術社員
 会社 -> 会社員 : 給与を払う
-....
+@enduml
  
 === mermaid
  
