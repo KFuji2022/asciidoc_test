@@ -27,11 +27,10 @@ jobs:
         id: documents
         uses: Analog-inc/asciidoctor-action@master
         with:
-          shellcommand: "asciidoctor -B ./090_sandbox/authoring/ README.adoc" 
+          shellcommand: "asciidoctor ./090_sandbox/authoring/README.adoc" 
       # Use the output from the documents step
       - name: Save AsciiDoc step
         uses: actions/upload-artifact@v1
         with:
           name: Output-document
           path: ./README.html
-          publish_branch: feat/api
