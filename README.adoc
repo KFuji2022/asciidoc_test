@@ -52,4 +52,4 @@ asciidocはヘッダー(見出し)の扱いが厳格な文書形式です。 +
 ....
 ====
 github actions追加後に変更しました +
-branchで動くgithub actionsを追加
+branchで動くgithub actionsを追加しています
