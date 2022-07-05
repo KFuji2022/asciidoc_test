@@ -86,21 +86,25 @@ PlantUML を直接書ける
 PlantUML を直接書ける
  
 .PlantUMLの例
-```puml
+
+[plantuml, "test1", format=png]
+....
 class 会社員
 class 技術社員
 class 会社
 会社員 <|-- 技術社員
 会社 -> 会社員 : 給与を払う
-``` 
+....
 === mermaid
  
 mermaid も直接書ける
  
 .mermaidの例
-```mermaid
+[mermaid, "test2", format=png]
+....
 graph LR;
     AsciiDocテキスト -- asciidocotor-pdf --> PDF仕様書;
     PlantUMLテキスト -- PlantUML --> png画像;
     png画像 -- asciidoctor-pdf --> PDF仕様書;
-```
+....
+
