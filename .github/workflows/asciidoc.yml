@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to local Repo
         uses: s0/git-publish-subdir-action@develop
         env:
-          REPO: git@github.com:carl1484/asciidoc.git
+          REPO: self
           BRANCH: feat/api
           FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
