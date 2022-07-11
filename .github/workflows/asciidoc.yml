@@ -39,5 +39,5 @@ jobs:
         env:
           REPO: self
           BRANCH: feat/api
-          FOLDER: ./doc
+          FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
