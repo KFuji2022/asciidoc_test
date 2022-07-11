@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Output-document
-          path: ./090_sandbox/authoring/*.html
+          path: ./090_sandbox/authoring/index.html
