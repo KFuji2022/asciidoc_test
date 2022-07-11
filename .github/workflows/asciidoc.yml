@@ -30,7 +30,7 @@ jobs:
           shellcommand: "asciidoctor -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
       # Use the output from the documents step
       - name: Deploy to local Repo
-        uses: git@github.com:carl1484/asciidoc_test.git
+        uses: s0/git-publish-subdir-actions@develop
         env:
           REPO: git@github.com:carl1484/asciidoc.git
           BRANCH: feat/api
