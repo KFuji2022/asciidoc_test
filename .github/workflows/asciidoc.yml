@@ -29,8 +29,10 @@ jobs:
         with:
           shellcommand: "asciidoctor -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
       # Use the output from the documents step
-      - name: Save AsciiDoc step
-        uses: actions/upload-artifact@v1
-        with:
-          name: Output-document
-          path: ./090_sandbox/authoring/README.html
+      - name: Deploy to local Repo
+        uses: git@github.com:carl1484/asciidoc_test.git
+        env:
+          REPO: git@github.com:carl1484/asciidoc.git
+          BRANCH: feat/api
+          FOLDER: ./090_sandbox/authoring
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
