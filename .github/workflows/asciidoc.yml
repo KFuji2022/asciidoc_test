@@ -36,6 +36,7 @@ jobs:
       - run: npm install @mermaid-js/mermaid-cli
       - run: npm bin -g
       - run: ls /opt/hostedtoolcache/node/18.5.0/x64/bin/npm
+      - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64/bin/npm"
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
