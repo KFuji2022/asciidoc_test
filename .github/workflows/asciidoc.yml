@@ -31,9 +31,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install -g phantomjs
-      - run: npm install -g mermaid
-      - run: npm install -g mermaid.cli
+      - run: 
+         npm install -g phantomjs
+         npm install -g mermaid
+         npm install -g mermaid.cli
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
