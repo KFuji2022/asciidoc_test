@@ -35,7 +35,7 @@ jobs:
       - run: npm install -g mermaid
       - run: npm install -g @mermaid-js/mermaid-cli
       - run: npm list -g | head -1
-      - run: find / -name "mmdc.cmd"
+      - run: find /opt/hostedtoolcache/node -name "mmdc.cmd"
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64/bin/npm"
       - run: mmdc.cmd -V
 
