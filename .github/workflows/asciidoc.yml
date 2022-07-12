@@ -29,6 +29,8 @@ jobs:
       # Node.js enviroment
       - name: node.js setup
       - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - run: npm install -g phantomjs
       - run: npm install -g mermaid
       - run: npm install -g mermaid.cli
