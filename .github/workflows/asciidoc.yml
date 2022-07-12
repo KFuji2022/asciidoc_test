@@ -32,9 +32,9 @@ jobs:
         with:
           node-version: latest
       - run: 
-         npm install -g phantomjs
-         npm install -g mermaid
-         npm install -g mermaid.cli
+         npm install phantomjs
+         npm install mermaid
+         npm install mermaid.cli
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
