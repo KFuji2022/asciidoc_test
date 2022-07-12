@@ -34,7 +34,7 @@ jobs:
       - run: npm install phantomjs
       - run: npm install mermaid
       - run: npm install @mermaid-js/mermaid-cli
-      - run: npm list --depth=0
+      - run: npm bin -g
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
