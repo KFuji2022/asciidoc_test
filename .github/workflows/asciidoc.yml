@@ -28,7 +28,7 @@ jobs:
           ref: feat/draft
       # Node.js enviroment
       - name: node.js setup
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install -g phantomjs
