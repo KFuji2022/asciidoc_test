@@ -26,6 +26,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: feat/draft
+      # Node.js enviroment
+      - name: node.js setup
+      - uses: actions/setup-node@v3
+      - run: npm install -g phantomjs
+      - run: npm install -g mermaid
+      - run: npm install -g mermaid.cli
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
