@@ -34,8 +34,8 @@ jobs:
       - run: npm install phantomjs
       - run: npm install -g mermaid
       - run: npm install -g @mermaid-js/mermaid-cli
-      - run: npm list -g | head -1
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/bin/npm
+      - run: npm list -g
+      - run: ls /opt/hostedtoolcache/node/18.5.0/x64
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64/bin/npm"
       - run: mmdc.cmd -V
 
