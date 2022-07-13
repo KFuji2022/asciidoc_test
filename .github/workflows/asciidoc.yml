@@ -38,7 +38,7 @@ jobs:
       - run: ls /opt/hostedtoolcache/node/18.5.0
       - run: ls /opt/hostedtoolcache/node
       - run: ls /opt/hostedtoolcache
-      - run: find /opt -name "mmdc.*"
+      - run: find /opt/hostedtoolcache/node -name "README.*"
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64"
       - run: mmdc.cmd -V
 
