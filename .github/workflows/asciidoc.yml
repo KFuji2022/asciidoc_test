@@ -34,7 +34,13 @@ jobs:
       - run: npm install phantomjs
       - run: npm install mermaid
       - run: npm install mermaid.cli
-      - run: find /opt/hostedtoolcache/node/ -name "mmdc.*"
+      - run: npm list --depth=0
+      - run: ls /opt/hostedtoolcache/node/18.5.0
+      - run: ls /opt/hostedtoolcache/node
+      - run: ls /opt/hostedtoolcache
+      - run: find /opt/hostedtoolcache -name "mmdc.*"
+      - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64"
+      - run: mmdc.cmd -V
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
