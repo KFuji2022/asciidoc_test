@@ -35,9 +35,9 @@ jobs:
       - run: npm install mermaid
       - run: npm install mermaid.cli
       - run: npm list --depth=0
-      - run: ls /home/runner/work/asciidoc_test/asciidoc_test
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/bin/npm
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib/node_modules
+      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/include
+      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/share
+      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64/bin/npm"
       - run: mmdc.cmd -V
 
