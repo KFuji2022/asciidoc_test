@@ -103,8 +103,8 @@ mermaid も直接書ける
 [mermaid, "test2", format=png]
 ....
 graph LR;
-    AsciiDocテキスト -- asciidocotor-pdf --> PDF仕様書;
-    PlantUMLテキスト -- PlantUML --> png画像;
+    AsciiDoc -- asciidocotor-pdf --> PDF仕様書;
+    PlantUML -- PlantUML --> png画像;
     png画像 -- asciidoctor-pdf --> PDF仕様書;
 ....
 
