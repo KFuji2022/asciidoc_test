@@ -33,7 +33,6 @@ jobs:
           node-version: latest
       - run: npm install phantomjs
       - run: npm install mermaid@7.0.9
-      - run: mmdc.cmd -V
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
