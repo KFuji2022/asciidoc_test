@@ -37,7 +37,7 @@ jobs:
       - run: npm list --depth=0
       - run: ls /opt/hostedtoolcache/node/18.5.0/x64/include/node
       - run: ls /opt/hostedtoolcache/node/18.5.0/x64/share
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib/node_modules
+      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib/node_modules/npm
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64/bin/npm"
       - run: mmdc.cmd -V
 
