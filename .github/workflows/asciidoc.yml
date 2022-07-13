@@ -47,7 +47,7 @@ jobs:
         id: documents
         uses: Analog-inc/asciidoctor-action@master
         with:
-          shellcommand: "asciidoctor -o index.html -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
+          shellcommand: "asciidoctor -o ./090_sandbox/authoring/index.html -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
       # Use the output from the documents step
       - name: Deploy to local Repo
         uses: s0/git-publish-subdir-action@develop
