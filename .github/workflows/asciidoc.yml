@@ -40,14 +40,14 @@ jobs:
       - run: ls /opt/hostedtoolcache
       - run: find /opt -name "mmdc.*"
       - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64"
-      - run: mmdc.cmd -V
+      #- run: mmdc.cmd -V
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
         id: documents
         uses: Analog-inc/asciidoctor-action@master
         with:
-          shellcommand: "asciidoctor -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
+          shellcommand: "asciidoctor -o ./index.html -r asciidoctor-diagram ./090_sandbox/authoring/README.adoc"
       # Use the output from the documents step
       - name: Deploy to local Repo
         uses: s0/git-publish-subdir-action@develop
