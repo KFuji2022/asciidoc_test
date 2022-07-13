@@ -31,15 +31,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-      - run: npm install -g npm@latest
-      - run: npm install -g yarn
-      - run: yarn add mermaid
-      - run: yarn add @mermaid-js/mermaid-cli
-      - run: npm list --depth=0
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/include/node
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib/node_modules/npm/lib
-      - run: ls /opt/hostedtoolcache/node/18.5.0/x64/lib/node_modules/npm/bin
-      - run: export PATH="$PATH:/opt/hostedtoolcache/node/18.5.0/x64"
+      - run: npm install phantomjs
+      - run: npm install mermaid@7.0.9
       - run: mmdc.cmd -V
 
       # Output command using asciidoctor-action
