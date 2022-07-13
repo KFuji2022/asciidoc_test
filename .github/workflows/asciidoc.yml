@@ -31,8 +31,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-      - run: npm install phantomjs
-      - run: npm install mermaid@7.0.9
+      - run: npm install -g phantomjs
+      - run: npm install -g mermaid
+      - run: npm install -g mermaid.cli
+      - run: find /opt/hostedtoolcache/node/ -name "mmdc.*"
 
       # Output command using asciidoctor-action
       - name: Build AsciiDoc step
