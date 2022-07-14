@@ -55,7 +55,7 @@ jobs:
           target_owner: carl1484
           target_repo: asciidoc_test
           target_dir: doc
-          target_branch: master # default
+          target_branch: main # default
           # Optional
-          access_token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          access_token: ${{ secrets.GITHUB_TOKEN }}
 
