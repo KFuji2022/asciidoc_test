@@ -54,8 +54,8 @@ jobs:
           src_dir: ./090_sandbox/authoring
           target_owner: carl1484
           target_repo: asciidoc_test
-          target_dir: ./doc
-          target_branch: master # default
+          target_dir: ./docs
+          target_branch: main # default
           # Optional
           access_token: ${{ secrets.GITHUB_TOKEN }}
 
