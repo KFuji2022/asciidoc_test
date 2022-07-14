@@ -47,3 +47,15 @@ jobs:
           BRANCH: feat/api
           FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          
+      - name: Deploy
+        uses: manzoorwanijk/action-deploy-to-repo@master
+        with:
+          src_dir: ./090_sandbox/authoring
+          target_owner: carl1484
+          target_repo: asciidoc_test
+          target_dir: doc
+          target_branch: master # default
+          # Optional
+          access_token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+
