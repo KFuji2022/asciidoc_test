@@ -53,7 +53,7 @@ jobs:
         with:
           src_dir: ./090_sandbox/authoring
           target_owner: carl1484
-          target_repo: carl1484/asciidoc_test
+          target_repo: asciidoc_test
           target_dir: ./docs
           target_branch: main
           # Optional
