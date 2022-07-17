@@ -48,7 +48,7 @@ jobs:
           FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
       
-      - name: Deploy 🚀
+      - name: Deploy1
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
@@ -56,6 +56,7 @@ jobs:
           repositorty-name: carl1484/asciidoc_test
           target-folder: docs
           
+        
       - name: Deploy
         uses: manzoorwanijk/action-deploy-to-repo@master
         with:
