@@ -48,13 +48,14 @@ jobs:
           FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
       
-      - name: Release build
-        uses: hpcodecraft/action-deploy-workspace-to-repo@v2.2
-        env:
-          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SRC_FOLDER: ./090_sandbox/authoring
-          DEST_OWNER: carl1484
-          DEST_REPO: ${{ github.event.repository.name }}
-          DEST_BRANCH: main
-          DEST_FOLDER: docs
+      - name: Deploy
+        uses: manzoorwanijk/action-deploy-to-repo@master
+        with:
+          src_dir: ./090_sandbox/authoring
+          target_owner: carl1484
+          target_repo: carl1484/asciidoc_test
+          target_dir: ./docs
+          target_branch: main
+          # Optional
+          access_token: ${{ secrets.GITHUB_TOKEN }}
 
