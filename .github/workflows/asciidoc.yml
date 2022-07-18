@@ -48,14 +48,11 @@ jobs:
           FOLDER: ./090_sandbox/authoring
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
       
-      - name: Deploy
-        uses: manzoorwanijk/action-deploy-to-repo@master
+      - name: Deploy to directory
+        uses: GuillaumeFalourd/copy-push-files@v1
         with:
-          src_dir: ./090_sandbox/authoring
-          target_owner: carl1484
-          target_repo: asciidoc_test
-          target_dir: carl1484/asciidoc_test/docs
           target_branch: main
-          # Optional
+          target_dir: docs
+          source_files: ./090_sandbox/authoring/index.html
+          remote_repository: https://github.com/carl1484/asciidoc_test
           access_token: ${{ secrets.GITHUB_TOKEN }}
-
