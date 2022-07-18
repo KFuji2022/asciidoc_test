@@ -53,6 +53,6 @@ jobs:
         with:
           target_branch: main
           target_dir: docs
-          source_files: ./090_sandbox/authoring/index.html
+          source_files: ./090_sandbox/authoring/
           remote_repository: https://github.com/carl1484/asciidoc_test
           access_token: ${{ secrets.GITHUB_TOKEN }}
