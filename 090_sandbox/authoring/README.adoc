@@ -108,3 +108,4 @@ graph LR;
     png画像 -- asciidoctor-pdf --> PDF仕様書;
 ....
 
+２０２２・７・１８に更新しました
