@@ -108,4 +108,5 @@ graph LR;
     png画像 -- asciidoctor-pdf --> PDF仕様書;
 ....
 
+表示用のサンプル
 
